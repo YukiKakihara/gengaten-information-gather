@@ -1,6 +1,8 @@
 const setEventInfoToSheet = () => {
-  const spreadsheet = SpreadsheetApp.openById('1v0C2hnog3zDzqzTrmdPPKG2ayC5W_NM2nfR2IsPXhAk');
-  const sheet = spreadsheet.getSheetByName('イベントリスト');
+  const sheetId = PropertiesService.getScriptProperties().getProperty('SHEET_ID');
+  const sheetName = PropertiesService.getScriptProperties().getProperty('SHEET_NAME');
+  const spreadsheet = SpreadsheetApp.openById(sheetId);
+  const sheet = spreadsheet.getSheetByName(sheetName);
   const eventList = getEventList();
 
   eventList.forEach((event, index) => {
