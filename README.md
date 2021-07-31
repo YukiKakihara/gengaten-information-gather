@@ -1,1 +1,1 @@
-漫画やアニメの原画展の最新イベントをスクレイピングする
+# gengaten-information-gather
