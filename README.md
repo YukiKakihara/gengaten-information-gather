@@ -1,1 +1,2 @@
 # gengaten-information-gather
+一都三県の原画展の情報をスクレイピングしてスプレッドシートに吐き出す
